@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.join-form{
+    margin: 10px 250px;
+}
+
+.row-group{
+	width: 330px;
+}
+
+.join-row{
+    margin-bottom: 10px;
+}
+
+.submit-row{
+    margin-top: 20px;
+}
+
+.btn-item{
+    width: 100%;
+}

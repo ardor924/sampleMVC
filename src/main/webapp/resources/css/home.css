@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.article-group{
+    margin: 20px;
+    padding: 20px;
+}
+
+.article-left,.article-right{
+    margin: 0 20px;
+}
+
+.article-twoside{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-title{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.article-text{
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+.row-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-center{
+    display: flex;
+    justify-content: center;
+}

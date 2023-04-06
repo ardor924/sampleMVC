@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.writing-form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textarea-wrap{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+    
+}
+
+.textara-input{
+	width: 100%;	
+    border: none;
+    padding: 10px 10px;
+}
+
+
+.btn-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-item{
+    padding: auto;
+    width: 100px;
+    margin: 10px 20px;
+}
+
+.test{
+	background-color: red;
+}
