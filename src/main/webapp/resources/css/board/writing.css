@@ -22,6 +22,7 @@
 }
 
 
+
 .btn-wrap{
     display: flex;
     justify-content: center;
@@ -35,4 +36,18 @@
 
 .test{
 	background-color: red;
+}
+
+
+
+/***************************************/
+.ck-editor__editable[role="textbox"] {
+  min-height: 550px;
+  font-size: 15px;
+  padding: 50px 45px;
+}
+
+.ck-content .image {
+  max-width: 80%;
+  margin: 20px auto;
 }

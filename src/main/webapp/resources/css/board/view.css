@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+.text-thin{
+    font-weight: lighter;
+    font-family: S-CoreDream-3Light;
+}
+
+.view-contents{
+    padding: 5px;
+}

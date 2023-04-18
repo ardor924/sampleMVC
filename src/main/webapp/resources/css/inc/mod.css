@@ -72,9 +72,22 @@ hr{
     margin: 10px 0px;
 }
 
+p,span,label,input{
+    font-family: Pretendard-Regular;
+}
+
 h1,h2,h3,h4,h5,h6,p,span,label{
     margin: 0;
     padding: 0;
+}
+
+.textarea-none{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    resize: none; 
+    overflow: hidden; 
 }
 
 /* ------------------------여기부터 공통 컨텐츠 CSS----------------------------------- */
@@ -89,27 +102,57 @@ h1,h2,h3,h4,h5,h6,p,span,label{
     display: flex;
     flex-direction: column;
 }
-.contents-headline{
+.contents-headline-center{
     margin: 10px 250px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
+.contents-headline-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .contents-title{
     display: flex;
     justify-content: center;
+    
 }
-.contents-head>hr{
-    margin-top: 20px;
-}
+
 
 .contents-main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .section-line{
-    margin: 10px 130px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.section-line-bold{
+    color: rgb(0, 19, 75);
+    height: 3px !important; 
 }
 
 
+.row-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-center{
+    display: flex;
+    justify-content: center;
+}
+
+.row-left,.row-right{
+	display: flex;
+}
+
+.row-item{
+	margin-left: 3px;
+}

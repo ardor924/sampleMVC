@@ -33,21 +33,20 @@
                         <div class="textarea-wrap form-group border">
                             <input class="textara-input form-text" name="board_title" placeholder="제목을 입력해 주세요."></input>
                         </div>
-                         
-                        <div class="form-group border">
-                            <textarea class="textara-input form-control" rows="20"  id="editor4" name="board_contents" placeholder="내용을 입력해 주세요"></textarea>
-                        </div>
+                        
+                         <div>
+                            <textarea class="textarea-none" id="editor" name="board_contents"></textarea>
+                         </div>
 
                         <div class="btn-wrap">
                             <button type="submit"  class="btn-item btn btn-primary" >
                                 <i class="fa-solid fa-check"></i> 등록
                             </button>
-                            <a type="button" class="btn-item btn btn-danger" href='#'><i class="fa-solid fa-x"></i> 취소</a>
+                            <a type="button" class="btn-item btn btn-danger" href='boardListPage.do'><i class="fa-solid fa-x"></i> 취소</a>
                         </div>		
 
                     </form>
                 </section>
-                <div class="test">test</div>
                 
                 
                 
@@ -75,8 +74,8 @@
 <%@ include file="../inc/commonJS.jsp" %><!-- ◀- 스프링 JS파일 로드 에러로 인해 임시로 JSP파일로 대체 -->
 
 <!-- 현재JSP의 JS파일 -->
-<script src="${ctx}/resources/js/ckeditor/ckeditor.js"></script><!-- ckEditor4 풀버전 -->
-<script src="${ctx}/resources/js/editor4_setting.js"></script><!-- 텍스트ui설정 -->
+<script src="${ctx}/resources/js/ckeditor5/build/ckeditor.js"></script><!-- ckEditor5 Full npm 빌드-->
+<script src="${ctx}/resources/js/ckeditor5/editor_setting.js"></script><!-- ckEditor5 설정파일-->
 
 
 <!-- ----------------------------- 자바스크립트 :  END ------------------------------------------ -->

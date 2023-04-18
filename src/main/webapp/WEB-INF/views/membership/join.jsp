@@ -4,7 +4,7 @@
 
 <!-- 현재파일의CSS -->
 <link rel="stylesheet" type="text/css" href="${ctx}/resources/css/inc/header.css"> 
-<link rel="stylesheet" type="text/css" href="${ctx}/resources/css/membership/join.css"> 
+<link rel="stylesheet" type="text/css" href="${ctx}/resources/css/membership/join.css?after"> 
 <link rel="stylesheet" type="text/css" href="${ctx}/resources/css/inc/footer.css"> 
 
 
@@ -19,14 +19,14 @@
         <!-- -------------------------------------------- 여기부터 Include : START ----------------------------------------------------------------------- -->
 
                 <!-- 컨텐츠헤드 -->
-                <section class="contents-headline">
+                <section class="contents-headline-center">
                     <h2 class="contents-title">회원가입</h2><!--타이틀명만 수정-->
-                    <hr class="section-line">
                 </section>
                 
 
                 <!-- 컨텐츠메인 -->
                 <section class="contents-main">
+                    <hr class="section-line">
                     <form class="join-form" action="memberInsert.do" method="post">
                         <div class="row-group">
                             <div class="join-row">

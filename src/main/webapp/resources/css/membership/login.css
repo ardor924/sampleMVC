@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 .join-form{
-    margin: 10px 250px;
+    display: flex;
+    justify-content: center;
 }
 
 .row-group{

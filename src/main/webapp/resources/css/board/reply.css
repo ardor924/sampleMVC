@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.replyFrm{
+    border: 1px solid #dee2ee;
+    border-radius: 0.25rem !important;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.reply-textarea{
+    font-size: 15px;
+}

@@ -30,8 +30,7 @@
 
 <!-- 6.CSS -->
 <link rel="stylesheet" type="text/css" href="${ctx}/resources/css/common/font.css"> 
-<link rel="stylesheet" type="text/css" href="${ctx}/resources/css/inc/mod.css"> 
-
+<link rel="stylesheet" type="text/css" href="${ctx}/resources/css/inc/mod.css?after"> <!--?after 사용시 캐시에 제한없이 css가 import됨  -->
 
 </head>
 <!----------------------------- head끝 ------------------------------------->

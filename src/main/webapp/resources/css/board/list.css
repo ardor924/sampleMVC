@@ -1,12 +1,28 @@
 @charset "UTF-8";
 
-
-.row-space-between{
+.search-row{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: end;
+    width: 500px;
 }
 
-.row-center{
+.search-frm{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 5px 0;
 }
+
+.search-type{
+    width:100px
+}
+
+.search-input{
+    width: 258px;
+}
+
+/* .search-btn{
+    width: 42px;
+    height: 38px;
+} */
