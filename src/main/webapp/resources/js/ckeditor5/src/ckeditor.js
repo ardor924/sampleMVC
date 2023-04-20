@@ -59,6 +59,9 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 
+import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
+
+
 class Editor extends ClassicEditor {}
 
 // Plugins to include in the build.
@@ -117,7 +120,9 @@ Editor.builtinPlugins = [
 	TableProperties,
 	TableToolbar,
 	TodoList,
-	Underline
+	Underline,
+	
+	CKFinder
 ];
 
 // Editor configuration.
@@ -168,7 +173,9 @@ Editor.defaultConfig = {
 			'underline',
 			'subscript',
 			'superscript',
-			'removeFormat'
+			'removeFormat',
+			
+			'ckfinder'
 		],
 		shouldNotGroupWhenFull: true
 	},

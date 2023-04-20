@@ -38,4 +38,12 @@ public interface BoardService {
 	// 더미데이터 생성
 	public BoardDTO dummy(BoardDTO bDto);
 
+	
+	
+	/*---------------파일------------------*/
+	// 폴더용 날짜포맷
+	public String getFolderDate() ;
+	
+	
+	
 }

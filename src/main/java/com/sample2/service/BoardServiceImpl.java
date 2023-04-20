@@ -1,5 +1,6 @@
 package com.sample2.service;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -165,6 +166,18 @@ public class BoardServiceImpl implements BoardService{
 		}
 	
 		return bDto;
+	}
+
+	/*----------------파일------------------*/
+	// 폴더용 날짜포맷
+	@Override
+	public String getFolderDate() {
+		
+		Date nowDate = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		String strDate = sdf.format(nowDate);
+		
+		return strDate;
 	}
 
 

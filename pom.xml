@@ -155,6 +155,21 @@
 		    <version>${org.springframework-version}</version>
 		    <scope>test</scope>
 		</dependency>
+		<!-- 6. 파일업로드 -->
+		<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+		<dependency>
+		    <groupId>commons-fileupload</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>1.4</version>
+		</dependency>
+		
+		
+		
+		
+		
+		
+		
+		
 		<!-- 의존성 추가 라이브러리 END -->
 		
 		

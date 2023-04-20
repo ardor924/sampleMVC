@@ -46,7 +46,7 @@
                   실험실1
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="memberInsertChk.do">테스트1</a></li>
+                  <li><a class="dropdown-item" href="uploadTestPage.do">업로드테스트1</a></li>
                   <li><a class="dropdown-item" href="#">테스트2</a></li>
                   <li><a class="dropdown-item" href="#">테스트3</a></li>
                   <li><a class="dropdown-item" href="#">테스트4</a></li>

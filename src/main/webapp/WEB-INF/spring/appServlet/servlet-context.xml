@@ -16,13 +16,29 @@
 	<resources mapping="/resources/**" location="/resources/" />
 	<resources mapping="/css/**" location="/resources/css" />
 	<resources mapping="/js/**" location="/resources/js" />
-	<resources mapping="/img/**" location="/resources/img" />
+	<resources mapping="/image/**" location="/resources/image" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
+	
+	
+	<!-- 다중업로드 API설정 -->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 파일인코딩 방식 -->
+		<beans:property name="defaultEncoding" value="utf-8"></beans:property>
+		 <!-- 업로드 가능한 최대파일크기(1024 * 1024 * 10bytes = 10MB) -->
+		<beans:property name="maxUploadSize" value="104857560"/>
+		 <!-- 업로드 가능한 1개파일크기(1024 * 1024 * 2bytes = 2MB) -->
+		<beans:property name="maxUploadSizePerFile" value="2097152"/>
+		<!-- 업로드 전 임시 메모리 사이즈 1MB-->
+		<beans:property name="uploadTempDir" value="file:/C:/upload/temp"/>
+		<!-- 업로드 전 임시 메모리 사이즈 1MB-->
+		<beans:property name="maxInMemorySize" value="10485756"/>
+	</beans:bean>
+	
 	
 	<context:component-scan base-package="com.sample2.myapp" />
 	
