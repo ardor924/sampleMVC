@@ -39,6 +39,7 @@ import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
 import SelectAll from '@ckeditor/ckeditor5-select-all/src/selectall.js';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter.js';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting.js';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
 import SpecialCharactersArrows from '@ckeditor/ckeditor5-special-characters/src/specialcharactersarrows.js';
@@ -58,9 +59,6 @@ import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
-
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-
 
 class Editor extends ClassicEditor {}
 
@@ -102,6 +100,7 @@ Editor.builtinPlugins = [
 	Paragraph,
 	RemoveFormat,
 	SelectAll,
+	SimpleUploadAdapter,
 	SourceEditing,
 	SpecialCharacters,
 	SpecialCharactersArrows,
@@ -120,9 +119,7 @@ Editor.builtinPlugins = [
 	TableProperties,
 	TableToolbar,
 	TodoList,
-	Underline,
-	
-	CKFinder
+	Underline
 ];
 
 // Editor configuration.
@@ -173,9 +170,7 @@ Editor.defaultConfig = {
 			'underline',
 			'subscript',
 			'superscript',
-			'removeFormat',
-			
-			'ckfinder'
+			'removeFormat'
 		],
 		shouldNotGroupWhenFull: true
 	},

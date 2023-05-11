@@ -11,7 +11,6 @@
 			</div>
 
 			<button class="btn btn-primary">제출</button>	
-			<img src="/image/${imgFile.getStoreFileName()}">
 		</form>
 	</div>
 </html>

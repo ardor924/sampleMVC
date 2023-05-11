@@ -5,5 +5,17 @@
 
 <div>
 	<div>파일 업로드 성공!</div>
-	<img src="">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div>${fDto.fName}</div>
+	<div>${fDto.fPath}</div>
+	
+	<img alt="이미지" src="imgShowTest">
+	
+	
+	
 </div>

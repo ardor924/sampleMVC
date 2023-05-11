@@ -49,7 +49,7 @@
                   <li><a class="dropdown-item" href="uploadTestPage.do">업로드테스트1</a></li>
                   <li><a class="dropdown-item" href="#">테스트2</a></li>
                   <li><a class="dropdown-item" href="#">테스트3</a></li>
-                  <li><a class="dropdown-item" href="#">테스트4</a></li>
+                  <li><a class="dropdown-item" href="imgTestPage.do">파일가져오기테스트</a></li>
                 </ul>
             </div>
             <div class="dropdown">

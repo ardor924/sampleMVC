@@ -8,15 +8,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sample2.mapper.BoardMapper;
+import com.sample2.mapper.FileMapper;
 import com.sample2.mapper.MemberMapper;
 import com.sample2.model.BoardDTO;
 import com.sample2.model.BoardPagingDTO;
+import com.sample2.model.FileDTO;
 
 @Service
 public class BoardServiceImpl implements BoardService{
 
 	@Autowired BoardMapper boardMapper;
 	@Autowired MemberMapper memberMapper;
+	@Autowired FileMapper fileMapper;
 	
 	
 	// 게시글 등록 
@@ -181,12 +184,24 @@ public class BoardServiceImpl implements BoardService{
 	}
 
 
+	// 파일 정보 등록
+	@Override
+	public int insertFileInfoToDB(FileDTO fDto) {
+		return fileMapper.insertFileInfoToDB(fDto);
+	}
+
+	// 파일정보 조회
+	@Override
+	public FileDTO getFileInfoFromDB(FileDTO fDto) {
+		return fileMapper.getFileInfoFromDB(fDto);
+	}
 
 
 
 
 
 
+	
 
 
 

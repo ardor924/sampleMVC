@@ -7,5 +7,6 @@
   <typeAliases>
   	<typeAlias type="com.sample2.model.MemberDTO" alias="memberDTO"/>
   	<typeAlias type="com.sample2.model.BoardDTO" alias="boardDTO"/>
+  	<typeAlias type="com.sample2.model.FileDTO" alias="fileDTO"/>
   </typeAliases>
 </configuration>

@@ -71,7 +71,7 @@
 
 
 <!-- 공통 JS파일 -->
-<%@ include file="../inc/commonJS.jsp" %><!-- ◀- 스프링 JS파일 로드 에러로 인해 임시로 JSP파일로 대체 -->
+<%@ include file="../inc/commonJS.jsp"%><!-- ◀- 스프링 JS파일 로드 에러로 인해 임시로 JSP파일로 대체 -->
 
 <!-- 현재JSP의 JS파일 -->
 <script src="${ctx}/resources/js/ckeditor5/build/ckeditor.js"></script><!-- ckEditor5 Full npm 빌드-->

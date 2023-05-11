@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.sample2.model.BoardDTO;
 import com.sample2.model.BoardPagingDTO;
+import com.sample2.model.FileDTO;
 
 public interface BoardService {
 
@@ -44,6 +45,10 @@ public interface BoardService {
 	// 폴더용 날짜포맷
 	public String getFolderDate() ;
 	
+	// 파일 정보 등록
+	public int insertFileInfoToDB(FileDTO fDto);
 	
+	// 파일정보 조회
+	public FileDTO getFileInfoFromDB(FileDTO fDto);
 	
 }
